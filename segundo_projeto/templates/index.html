@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home</title>
+	</head>
+<body>
+	<h1>Olá minha primeira view do Flask</h1>
+	<h1>{{title | upper}}</h1>
+	<p>{{ outra }}</p>
+
+	<ul>
+		{% for elemento in lista %}
+			<li>item {{loop.index}} : {{elemento | upper}}</li>
+			{% else %}
+			<li>lista vazia</li>
+		{% endfor %}
+	</ul>
+
+
+</body>
+</html>
